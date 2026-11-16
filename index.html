@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1323">
+  <meta name="description" content="Explora ocho cartas de Clash Royale y aprende cuándo jugarlas.">
+  <title>Clash Royale | Archivo de la arena</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="manifest" href="./manifest.json">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span aria-hidden="true">♛</span> Clash Royale</a>
+      <a class="nav-link" href="#cartas">Guía de cartas <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="inicio">
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Archivo de la arena</p>
+          <h1>Clash <span>Royale</span></h1>
+          <p class="intro">Explora ocho cartas, conoce su costo de elixir y aprende cuándo jugarlas en la arena.</p>
+          <a class="primary" href="#cartas">Explorar cartas <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="shield">
+            <div class="shield-inner"><span class="crown"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="wrap" id="cartas" aria-labelledby="titulo-cartas">
+      <h2 id="titulo-cartas">Guía de cartas</h2>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filtrar por tipo de carta">
+          <button type="button" data-filter="Todas" aria-pressed="true">Todas</button>
+          <button type="button" data-filter="Tropa" aria-pressed="false">Tropas</button>
+          <button type="button" data-filter="Hechizo" aria-pressed="false">Hechizos</button>
+          <button type="button" data-filter="Estructura" aria-pressed="false">Estructuras</button>
+        </div>
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Buscar carta…" aria-label="Buscar una carta">
+        </label>
+      </div>
+      <p id="results" class="results" role="status">8 cartas</p>
+      <div class="cards">
+        <article data-type="Tropa">
+          <div class="art" aria-hidden="true"><span>🛡️</span></div>
+          <span class="cost">3 de elixir</span>
+          <div class="info">
+            <p class="category">Tropa</p>
+            <h3>Caballero</h3>
+            <p class="description">Defiende en tierra y protege a tus tropas de apoyo.</p>
+          </div>
+        </article>
+        <article data-type="Tropa">
+          <div class="art" aria-hidden="true"><span>🏹</span></div>
+          <span class="cost">3 de elixir</span>
+          <div class="info">
+            <p class="category">Tropa</p>
+            <h3>Arqueras</h3>
+            <p class="description">Atacan desde lejos a unidades aéreas y terrestres.</p>
+          </div>
+        </article>
+        <article data-type="Tropa">
+          <div class="art" aria-hidden="true"><span>🐗</span></div>
+          <span class="cost">4 de elixir</span>
+          <div class="info">
+            <p class="category">Tropa</p>
+            <h3>Montapuercos</h3>
+            <p class="description">Presiona rápido y apunta directamente a edificios.</p>
+          </div>
+        </article>
+        <article data-type="Tropa">
+          <div class="art" aria-hidden="true"><span>🤖</span></div>
+          <span class="cost">4 de elixir</span>
+          <div class="info">
+            <p class="category">Tropa</p>
+            <h3>Mini P.E.K.K.A.</h3>
+            <p class="description">Inflige mucho daño por golpe. Úsalo contra tanques.</p>
+          </div>
+        </article>
+        <article data-type="Hechizo">
+          <div class="art" aria-hidden="true"><span>🔥</span></div>
+          <span class="cost">4 de elixir</span>
+          <div class="info">
+            <p class="category">Hechizo</p>
+            <h3>Bola de Fuego</h3>
+            <p class="description">Aprovecha su daño de área cuando el rival agrupe tropas.</p>
+          </div>
+        </article>
+        <article data-type="Hechizo">
+          <div class="art" aria-hidden="true"><span>⚡</span></div>
+          <span class="cost">2 de elixir</span>
+          <div class="info">
+            <p class="category">Hechizo</p>
+            <h3>Descarga</h3>
+            <p class="description">Aturde brevemente y ayuda a eliminar tropas débiles.</p>
+          </div>
+        </article>
+        <article data-type="Estructura">
+          <div class="art" aria-hidden="true"><span>💣</span></div>
+          <span class="cost">3 de elixir</span>
+          <div class="info">
+            <p class="category">Estructura</p>
+            <h3>Cañón</h3>
+            <p class="description">Colócalo cerca del centro para desviar atacantes terrestres.</p>
+          </div>
+        </article>
+        <article data-type="Estructura">
+          <div class="art" aria-hidden="true"><span>🗼</span></div>
+          <span class="cost">5 de elixir</span>
+          <div class="info">
+            <p class="category">Estructura</p>
+            <h3>Torre Infernal</h3>
+            <p class="description">Su daño aumenta si mantiene el ataque sobre el mismo objetivo.</p>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="empty" hidden>Prueba con otro nombre o selecciona otra categoría.</p>
+      <p class="tip"><strong>Consejo de arena.</strong> Si tus tropas sobreviven al defender, puedes aprovecharlas para contraatacar.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Guía no oficial hecha por fans. Clash Royale pertenece a Supercell.</div></footer>
+</body>
+</html>
